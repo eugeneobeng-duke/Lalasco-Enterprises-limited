@@ -243,9 +243,11 @@ ${cartList}
 Total: GHS ${cartTotal.textContent}
     `;
 
-    // Always open WhatsApp in browser/mobile app
-    const url = `https://api.whatsapp.com/send?phone=${whatsappNumber}&text=${encodeURIComponent(msg)}`;
-    window.open(url,"_blank");
+   const msg = `New Order From Lalasco Website%0A--------------------%0AName: ${name}%0APhone: ${phone}%0ALocation: ${location}%0ADelivery Method: ${delivery}%0APayment Method: ${payment}%0A%0AItems:%0A${cartList}%0A--------------------%0ATotal: GHS ${cartTotal.textContent}`;
+
+// Use api.whatsapp.com link for mobile and desktop
+const url = `https://api.whatsapp.com/send?phone=${whatsappNumber}&text=${msg}`;
+window.location.href = url; // Better on mobile
 
     cart = [];
     updateCartUI();
