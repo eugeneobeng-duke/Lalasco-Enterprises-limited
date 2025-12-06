@@ -227,7 +227,8 @@ ${cartList}
 Total: GHS ${cartTotal.textContent}
     `;
 
-    const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(msg)}`;
+const url = `https://api.whatsapp.com/send?phone=${whatsappNumber}&text=${encodeURIComponent(msg)}`;
+
     window.open(url, "_blank");
 
     cart = [];
@@ -243,3 +244,4 @@ Total: GHS ${cartTotal.textContent}
 
 </body>
 </html>
+
