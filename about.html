@@ -1,0 +1,249 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lalasco Enterprise - About Us</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    /* Car Essentials Section */
+    .car-essentials {
+      background: linear-gradient(to right, #f6f7fb, #e3f2fd);
+      padding: 50px 20px;
+    }
+
+    .car-essentials h2 {
+      text-align: center;
+      font-size: 2rem;
+      color: #1a73e8;
+      margin-bottom: 15px;
+    }
+
+    .car-essentials p {
+      text-align: center;
+      font-size: 1rem;
+      max-width: 700px;
+      margin: 0 auto 40px auto;
+      color: #333;
+    }
+
+    .essentials-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      align-items: start;
+    }
+
+    .essential-item {
+      display: flex;
+      background: rgba(255,255,255,0.85);
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .essential-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+
+    .essential-item img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      flex-shrink: 0;
+      border-radius: 0 0 0 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    .essential-text {
+      padding: 15px;
+    }
+
+    .essential-text h3 {
+      margin-top: 0;
+      margin-bottom: 8px;
+      color: #1a73e8;
+      font-size: 1.2rem;
+    }
+
+    .essential-text p {
+      margin: 0;
+      font-size: 0.95rem;
+      color: #555;
+    }
+
+    @media (max-width: 600px) {
+      .essential-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .essential-item img {
+        width: 100%;
+        height: 200px;
+        border-radius: 10px 10px 0 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+   <header class="main-header">
+  <div class="top-bar">
+    <div class="top-info">
+      <div class="info-item">
+        <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" class="info-icon">
+        <span>lalascoenterprise@gmail.com</span>
+      </div>
+
+      <div class="info-item">
+        <img src="https://cdn-icons-png.flaticon.com/512/159/159832.png" class="info-icon">
+        <span>0532719501 / 0591952491</span>
+      </div>
+
+      <div class="info-item">
+        <img src="https://cdn-icons-png.flaticon.com/512/535/535137.png" class="info-icon">
+        <span>Visit us at Bechem, Ahafo Region, Ghana</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="nav-bar">
+    <h1 class="logo">Lalasco Enterprise</h1>
+
+    <nav id="main-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="services.html">Services</a>
+    </nav>
+
+    <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+  </div>
+</header>
+
+  
+
+  <!-- About Us -->
+  <section class="about">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>
+        Lalasco Enterprise is dedicated to providing high-quality car spare parts and essentials 
+        to customers across Ghana. We pride ourselves on excellent service, competitive prices, 
+        and fast delivery. Our team is committed to helping you maintain your vehicle efficiently 
+        and reliably.
+      </p>
+    </div>
+  </section>
+
+  <!-- Car Essentials Section -->
+  <section class="car-essentials">
+    <div class="container">
+      <h2>Our Car Essentials</h2>
+      <p>We offer a range of essential items to keep your vehicle running smoothly and safely.</p>
+
+      <div class="essentials-grid">
+        <!-- Engine Oil -->
+        <div class="essential-item">
+          <img src="https://cdn.vectorstock.com/i/500p/82/44/car-spare-parts-collection-vector-26738244.jpg" alt="Engine Oil">
+          <div class="essential-text">
+            <h3>Engine Oil</h3>
+            <p>Lubricates engine parts, reduces friction, prevents wear, and maintains engine temperature.</p>
+          </div>
+        </div>
+
+        <!-- Oil Filter -->
+        <div class="essential-item">
+          <img src="https://images.jdmagicbox.com/quickquotes/images_main/engine-parts-for-trucks-2184734944-neuj4e7x.jpg" alt="Oil Filter">
+          <div class="essential-text">
+            <h3>Oil Filter</h3>
+            <p>Removes debris and dirt from engine oil, keeping your engine clean and efficient.</p>
+          </div>
+        </div>
+
+        <!-- Air Filter -->
+        <div class="essential-item">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqHugeHylR0iJb_Gflxdd7MzLgcdaRS8ej-w&s" alt="Air Filter">
+          <div class="essential-text">
+            <h3>Air Filter</h3>
+            <p>Prevents dust and particles from entering the engine, improving performance and fuel efficiency.</p>
+          </div>
+        </div>
+
+        <!-- Car Engine Oil Cap -->
+        <div class="essential-item">
+          <img src="https://www.championautoparts.com/content/dam/marketing/North-America/champion/partsmatter/by-the-numbers/all-about-motor-oil/Car-Engine-Oil-Cap-thumbnail.jpg" alt="Engine Oil Cap">
+          <div class="essential-text">
+            <h3>Engine Oil Cap</h3>
+            <p>Seals the oil reservoir, preventing leaks and ensuring proper oil circulation for engine health.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+  <div class="footer-container">
+
+    <!-- Left Column -->
+    <div class="footer-section">
+      <h3 class="footer-title">Lalasco Enterprise</h3>
+      <p>"Quality Parts, Trusted Service"</p>
+
+      <div class="footer-info">
+        <p><strong>📱 Mobile:</strong> 0532719501 / 0591952491</p>
+        <p><strong>☎️ Main Office:</strong> 03220 98745</p>
+        <p><strong>📧 Email:</strong> lalascoenterprise@gmail.com</p>
+        <p><strong>📍 Branches:</strong> Bechem, Goaso, Kumasi, Sunyani</p>
+      </div>
+    </div>
+
+    <!-- Middle Column -->
+    <div class="footer-section">
+      <h4 class="footer-subtitle">Working Hours</h4>
+      <p>Monday – Saturday: <strong>7:30 AM – 6:00 PM</strong></p>
+      <p>Sunday: <strong>Closed</strong></p>
+
+      <button onclick="toggleGuidelines()" class="footer-btn">
+        Guidelines to Booking
+      </button>
+
+      <div id="guidelines-box" class="guidelines-box">
+        <h4>Booking Guidelines</h4>
+        <p>1. Choose your product.</p>
+        <p>2. Call/WhatsApp to confirm availability.</p>
+        <p>3. Send your name, product, and location.</p>
+        <p>4. Wait for confirmation.</p>
+        <p>5. Pay on delivery or via mobile money.</p>
+        <p>6. Keep your phone active for delivery.</p>
+      </div>
+    </div>
+
+    <!-- Right Column -->
+    <div class="footer-section">
+      <h4 class="footer-subtitle">Legal</h4>
+      <a href="privacy.html" class="footer-link">Privacy Policy</a>
+      <a href="terms.html" class="footer-link">Terms & Conditions</a>
+
+      <p class="footer-copy">&copy; 2025 Lalasco Enterprise. All rights reserved.</p>
+    </div>
+
+  </div>
+</footer>
+
+  <script>
+    function toggleGuidelines() {
+      var box = document.getElementById("guidelines-box");
+      box.style.display = (box.style.display === "none") ? "block" : "none";
+    }
+  </script>
+
+  <script src="script.js"></script>
+</body>
+</html>
